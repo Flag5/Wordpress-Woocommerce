@@ -4,10 +4,9 @@
     Plugin URI: https://payeer.com
     Description: Module for accepting payments in the payment system Payeer.
     Version: 1.0.2
-    Author: Payeer
-    Author URI: https://payeer.com
+    Author: Nicolas Kowenski
+    Author URI: https://flag5.com
 
-    Copyright: © 2010-2016 Payeer.
 	License: GNU General Public License v3.0
 	License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
@@ -40,7 +39,7 @@ function woocommerce_payeer()
 			$plugin_dir = plugin_dir_url(__FILE__);
 			
 			$this->id = 'payeer';
-			$this->icon = apply_filters('woocommerce_payeer_icon', $plugin_dir . 'payeer.png');
+			$this->icon = apply_filters('woocommerce_payeer_icon', $plugin_dir . 'cards.png');
 			$this->has_fields = false;
 			$this->init_form_fields();
 			$this->init_settings();
